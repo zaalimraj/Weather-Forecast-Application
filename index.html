@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <div class="container mx-auto p-5 flex-grow">
+        <h1 class="text-3xl font-bold text-center">Weather Forecast Application</h1>
+        <div class="mt-5">
+            <input type="text" id="cityInput" class="border p-2 w-full" placeholder="Enter city name">
+            <button id="searchButton" class="bg-blue-500 text-white p-2 mt-2 w-full">Search</button>
+            <button id="currentLocationButton" class="bg-green-500 text-white p-2 mt-2 w-full">Use Current Location</button>
+        </div>
+        <div id="weatherDisplay" class="mt-5"></div>
+        <div id="forecastDisplay" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
+            <!-- Example of a styled card -->
+            <div class="bg-white shadow-lg rounded-lg p-5">
+                <h2 class="text-xl font-semibold">City Name</h2>
+                <p class="text-gray-700">Temperature: 25°C</p>
+                <p class="text-gray-700">Condition: Sunny</p>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-800 text-white p-5 mt-auto">
+        <p>&copy; 2024 Weather Forecast Application. All Rights Reserved.</p>
+        <p>Contact Us: <a href="mailto:rajmishr150@gmail.com" class="underline">rajmishr150@gmail.com</a></p>
+        <p>Mobile: <a href="tel:+18318785442" class="underline">8318785442</a></p> 
+        <p>GitHub Link: <a href="https://github.com/zaalimraj/Student-Registration-System" class="underline">GitHub Link</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
 
